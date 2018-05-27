@@ -37,7 +37,7 @@ void startTimer(redisAsyncContext *context, void *rep, void *data)
     {
         if (strcmp( reply->element[0]->str, "subscribe") != 0)
         {
-            cerr << "Message recieved on channel `" << reply->element[1]->str << "`" << endl;
+            //cerr << "Message recieved on channel `" << reply->element[1]->str << "`" << endl;
             startTime = Time::now();
             timerStarted = true;
         }
